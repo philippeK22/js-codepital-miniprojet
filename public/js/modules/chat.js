@@ -1,14 +1,9 @@
-export class chat {
-    constructor(nom){
-        this.nom =nom;
-    }
-    miaule(){
-        setTimeout(() => {
-            console.log("miaaaule !");
+export let garfield = {
+    nom: "garfield",
+    miauler: function(){
+        setInterval(() => {
+            console.log(this.nom, ": MiaouwWWWWWWWWWWWWWWWWWWWWWWWWWWww")
             
-        }, 2000)
+        }, 20000);
     }
 };
-
-
-
